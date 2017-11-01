@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>176</y>
+      <w>192</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Controleur
+--
+- nom: String
+- motDePasse: String
+- representation: Representation
+--
++ Controleur();
++ setRepresentation(representation:Representation)
++ getRepresentation(): Representation
++ getNom(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>360</y>
+      <w>224</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Superviseur
+--
+--
++ Superviseur()
++ zoom()
++ reinitialiserAppareil()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>296</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>16</y>
+      <w>272</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>/Station/
+--
+- nom: String
+--
++ Station(nom:String, appareils:List&lt;Appareil&gt;)
++ getNom():String
++ getAppareil():List&lt;Appareil&gt;
++ addAppareil(appareil: Appareil)
++ removeAppareil(index:int)
++ removeAppareil(appareil:Appareil)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>152</y>
+      <w>216</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>template=T
+/Appareil/
+--
+- nom: String
+- reference: String
+- type: String
+- dateMiseEnService: Date
+- value: T
+- isPanne: boolean
+--
++ Appareil(nom:String, value:T)
++ getNom(): String
++ setNom(nom: String)
++ getValue(): T
++ isPanne():boolean
++ redemarrer()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>272</x>
+      <y>376</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Anenometre
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>376</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Thermometre
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>376</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Pluviometre
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>376</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Hygrometre
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>376</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Celometre
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>344</y>
+      <w>136</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>344</y>
+      <w>72</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>344</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>344</y>
+      <w>48</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>584</x>
+      <y>344</y>
+      <w>112</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>56</y>
+      <w>136</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+r2=appareils
+m2=0..n</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>480</y>
+      <w>192</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>StationEsclave
+--
+--
++ reinitialiser(appareil:Appareil)
++ reinitialiser(index:int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>144</y>
+      <w>24</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>480</y>
+      <w>232</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>StationAutonome
+--
+
+--
++ reparerAppareil():String
++ redemarrer()
++ reinitialiserAppareil(appareil:Appareil)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>144</y>
+      <w>24</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>504</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Administrateur
+--
+--
++ Administrateur()
++ ajouter()
++ suppression()
++ changerAppareil(old:Appareil, new:Appareil)
++ changerAppareil(oldIndex:int, new:Appareil)
++ redemarrerStation()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>424</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>16</y>
+      <w>248</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.
+Personne
+--
+
+--
++ rechercher():List&lt;Station&gt;
++ recherche(typeStation:Class):List&lt;Station&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>88</y>
+      <w>24</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+</diagram>
